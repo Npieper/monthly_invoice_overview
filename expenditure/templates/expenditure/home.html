@@ -1,8 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends "expenditure/base.html" %}
 
-<body>
-    <h1>Template expenditure</h1>
-</body>
+{% block content %}
+    {% for expenditure in expenditures %}
 
-</html>
+        <h1>{{ expenditure.netflix }}</h1>
+        <h1>{{ expenditure.amazon }}</h1>
+        <h1>{{ expenditure.xtra_fit }}</h1>
+    {% endfor %}
+
+{% endblock content %}
