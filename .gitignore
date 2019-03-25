@@ -1,2 +1,6 @@
-.idea/*
+.idea
+.Python
 db.sqlite3
+lib
+bin
+include

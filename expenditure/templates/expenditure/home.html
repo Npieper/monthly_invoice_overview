@@ -1,11 +1,18 @@
 {% extends "expenditure/base.html" %}
 
 {% block content %}
-    {% for expenditure in expenditures %}
-
-        <h1>{{ expenditure.netflix }}</h1>
-        <h1>{{ expenditure.amazon }}</h1>
-        <h1>{{ expenditure.xtra_fit }}</h1>
+   
+     {% for expenditure in expenditures %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ expenditure.name}}</a>
+              <small class="text-muted">{{ expenditure.price }}</small>
+            </div>
+          </div>
+        </article>
     {% endfor %}
+
+    <p>{{monthly_payment}} Euro</p>
 
 {% endblock content %}
