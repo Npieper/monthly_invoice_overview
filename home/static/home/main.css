@@ -94,4 +94,8 @@ a.article-title:hover {
 .overview-div {
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 15px;
 }
+#article-div {
+  width: 100%;
+}  

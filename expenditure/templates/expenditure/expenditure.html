@@ -3,13 +3,14 @@
 {% block content %}
 
 {% for expenditure in expenditures %}
-<article class="media content-section">
-  <div class="media-body">
-    <div class="article-metadata">
+<article class="media content-section" id="article-div">
+  <div class="media-body"> 
+    <div class="article-metadata"> 
       <a class="mr-2" href="#">{{ expenditure.name}}</a>
       <small class="text-muted">{{ expenditure.price }}</small>
-    </div>
-  </div>
+   </div>
+   </div>
+  
 </article>
 {% endfor %}
 
