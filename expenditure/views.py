@@ -13,7 +13,7 @@ def home(request):
         'monthly_payment': monthly_payment
     }
 
-    return render(request, 'expenditure/home.html', context)
+    return render(request, 'expenditure/expenditure.html', context)
 
 def calculate_monthly_payment(expenditures):
 
